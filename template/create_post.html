@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new post</title>
+</head>
+<body>
+    <form action="/blog/create_post" method="post">{% csrf_token %}
+        <label>
+            <p>tittle: </p><input id="tittle" type="text">
+        </label>
+        <label>
+            <p>description: </p><input id="description" type="text">
+        </label>
+        <label>
+            <p>Hashtags: </p><input id="hashtags" type="text">
+        </label>
+        <br>
+        <br>
+        <br>
+        <button>Resert</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="" style="text-align: center; margin-top: 200px">
+        <ul style="list-style: none">
+            {% for i in blog %}
+            <li style="color: blue; padding: 50px; font-size: 30px">
+                Tittle: <span style="color: darkcyan">{{ i.tittle}}</span>
+                <br>
+                Hashtags: <span style="color: darkcyan">{{ i.hashtags}}</span>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
